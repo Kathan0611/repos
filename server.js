@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use('/userRouter', authRouter);
 
-app.get('/',()=>{
+app.get('/get',()=>{
     console.log('server running on root')
 })
 app.get('/home',()=>{
